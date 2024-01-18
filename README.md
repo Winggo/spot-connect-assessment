@@ -1,4 +1,5 @@
 # Spot Connect Assessment
+## By Winggo Tse
 
 A small React app that displays a table, showing a list of customers (name, number of purchases, amount) in row format.
 On the right-side of the table is the details section.
