@@ -1,0 +1,43 @@
+.details-wrapper {
+  border: 1px solid grey;
+  padding: 10px;
+  margin: 0 auto;
+  min-width: 300px;
+
+  .details-title {
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    
+    label {
+      font-weight: 500;
+    }
+    input {
+      width: 40%;
+      border: 1px solid black;
+      padding: 2px;
+      font-size: 14px;
+    }
+    input:disabled {
+      background-color: white;
+      border: none;
+      padding: 3px;
+      color: black;
+    }
+  }
+
+  .button-wrapper {
+    margin-top: 30px;
+    text-align: center;
+
+    button {
+      width: 20%;
+    }
+  }
+}

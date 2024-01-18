@@ -1,26 +1,42 @@
 .customer-table {
-  border: 1px solid grey;
   margin: 20px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  height: auto;
 	
   .table-wrapper {
     flex-grow: 4;
-    border: none;
-    border-right: 1px solid grey;
+
+    .table-row:not(:first-child) {
+      cursor: pointer;
+    }
 
     .table-cell {
       display: flex;
       justify-content: center;
-
-      .edit-customer, .delete-customer {
-        margin: 0 5px 0 5px;
+    }
+    
+    .action-cell {
+      color: #028FB9;
+      text-decoration: underline;
+      cursor: pointer;
+      max-width: 60px;
+    }
+    .table-row:first-child {
+      .action-cell {
+        color: black;
+        text-decoration: none;
+        cursor: text;
+      }
+      .action-cell:hover {
+        color: black;
       }
     }
   }
 	
   .details-wrapper {
     flex-grow: 1;
-    border: none;
   }
 }

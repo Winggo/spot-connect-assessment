@@ -3,16 +3,31 @@ import PropTypes from 'prop-types'
 import TableCell from './TableCell'
 import './TableRow.css'
 
-function TableRow({ id, values, renderValue, onRowClick }) {
+function TableRow({ id, values, onRowClick }) {
+  if (!values) return null
+  
   return (
     <div key={id} className="table-row" onClick={() => onRowClick({ id, values })}>
-      {values.map((value, index) => renderValue(value, index))}
+      {values.map(({ id: cellId, value, onClick }, index) => {
+        return (
+          <TableCell
+            key={cellId ?? index}
+            onClick={onClick ? (
+              (e) => {
+                e.stopPropagation()
+                return onClick({ id, values }) 
+              })
+              : null}
+          >
+            {value}
+          </TableCell>
+        )
+      })}
     </div>
   )
 }
 
 TableRow.defaultProps = {
-  renderValue: ({ id, value } = {}, index) => <TableCell key={id ?? index}>{value}</TableCell>,
   onRowClick: () => {},
 }
 
@@ -30,7 +45,6 @@ TableRow.propTypes = {
       value: PropTypes.any,
     })
   ),
-  renderValue: PropTypes.func,
   onRowClick: PropTypes.func,
 }
 

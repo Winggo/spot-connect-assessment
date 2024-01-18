@@ -2,7 +2,7 @@ import './TableCell.css'
 
 function TableCell(props) {
   return (
-    <div className="table-cell">
+    <div className={props.onClick ? "table-cell action-cell" : "table-cell"} onClick={props.onClick}>
       {props.children}
     </div>
   )

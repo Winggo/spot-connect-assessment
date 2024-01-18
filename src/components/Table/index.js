@@ -4,7 +4,7 @@ import TableRow from './TableRow'
 import './index.css'
 
 function Table ({ title, headerValues = [], values = [], onRowClick }) {
- return (
+  return (
    <div className="table-wrapper">
       <div className="table-title">
         {title}
@@ -30,7 +30,7 @@ const idPropShape = PropTypes.oneOfType([
 ])
 
 Table.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.node.isRequired,
   headerValues: PropTypes.arrayOf(
     PropTypes.shape({
       id: idPropShape.isRequired,

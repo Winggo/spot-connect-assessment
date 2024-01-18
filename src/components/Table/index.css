@@ -1,18 +1,27 @@
 .table-wrapper {
-  border: 1px solid grey;
+  border-bottom: none;
   text-align: center;
 
   .table-title {
-    border-bottom: 1px solid grey;
+    border: 1px solid grey;
     padding: 10px 5px 10px 5px;
     font-weight: 600;
+    position: relative;
+
+    .table-add-btn {
+      position: absolute;
+      right: 8px;
+      top: 9px;
+    }
   }
 
   .table-row:first-child {
     font-weight: 500;
   }
 
-  .table-row:not(:last-child) {
+  .table-row {
     border-bottom: 1px solid grey;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
   }
 }
