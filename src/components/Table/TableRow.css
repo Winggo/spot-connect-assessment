@@ -1,0 +1,12 @@
+.table-row {
+  display: flex;
+  justify-content: space-between;
+
+  .table-cell {
+    flex: 1;
+    border: none;
+  }
+  .table-cell:not(:last-child) {
+    border-right: 1px solid grey;
+  }
+}
