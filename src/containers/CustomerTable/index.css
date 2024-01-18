@@ -1,0 +1,26 @@
+.customer-table {
+  border: 1px solid grey;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+	
+  .table-wrapper {
+    flex-grow: 4;
+    border: none;
+    border-right: 1px solid grey;
+
+    .table-cell {
+      display: flex;
+      justify-content: center;
+
+      .edit-customer, .delete-customer {
+        margin: 0 5px 0 5px;
+      }
+    }
+  }
+	
+  .details-wrapper {
+    flex-grow: 1;
+    border: none;
+  }
+}
