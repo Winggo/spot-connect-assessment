@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Ivan Dweck",
+    "numItems": 12,
+    "amount": 1200
+  },
+  {
+    "id": 2,
+    "name": "Chloe Caddel",
+    "numItems": 5,
+    "amount": 450
+  },
+  {
+    "id": 3,
+    "name": "Daniel Frost",
+    "numItems": 19,
+    "amount": 95
+  },
+  {
+    "id": 95,
+    "name": "Steph Curry",
+    "numItems": 1,
+    "amount": 500
+  },
+  {
+    "id": 246,
+    "name": "Anna Belle",
+    "numItems": 33,
+    "amount": 231
+  }
+]
