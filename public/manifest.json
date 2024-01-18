@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "SpotConnect Assessment",
+  "name": "Simple React app to display a table for a shop owner's customers",
   "icons": [
     {
       "src": "favicon.ico",
